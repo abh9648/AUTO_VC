@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../Navbar";
-import "./repoDetails.css";
+import "./RepoDetails.css";
 
 const RepoDetails = () => {
   const { id } = useParams();
