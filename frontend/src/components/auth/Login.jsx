@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo192.png";
 import "./auth.css";
 import Navbar from "../Navbar";
-
+const API_URL = "https://auto-vc-yxwu.onrender.com";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -18,7 +18,7 @@ const Login = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:3002/login", {
+      const res = await axios.post(`${API_URL}/login`, {
         email,
         password,
       });
