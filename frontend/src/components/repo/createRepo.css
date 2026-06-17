@@ -1,0 +1,79 @@
+
+.create-repo-container {
+  min-height: calc(100vh - 70px); /* adjust based on navbar height */
+  background-color: #0d1117;
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-repo-card {
+  background: #161b22;
+  padding: 40px;
+  border-radius: 12px;
+  width: 400px;
+  color: white;
+  box-shadow: 0 3px 5px rgba(184, 182, 182, 0.5);
+}
+
+.create-repo-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 14px;
+  color: #8b949e;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  color: white;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0b0b0b;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.create-btn {
+  width: 100%;
+  padding: 10px;
+  background: #029907;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.create-btn:hover {
+  background: #2ea043;
+}

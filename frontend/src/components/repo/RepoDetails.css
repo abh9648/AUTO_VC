@@ -1,0 +1,143 @@
+/* Page */
+.repo-container {
+  padding: 20px 40px;
+  background: #0d1117;
+  color: #c9d1d9;
+  min-height: 100vh;
+  margin-top: 10px;
+}
+
+/* Header */
+.repo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.repo-title {
+  font-size: 26px;
+  color: #c2cedb;
+  margin: 0;
+}
+
+.repo-description {
+  color: #8b949e;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.repo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.repo-btn {
+  background: #21262d;
+  border: 1px solid #30363d;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #c9d1d9;
+  cursor: pointer;
+}
+
+.repo-btn:hover {
+  background: #30363d;
+}
+
+/* Owner */
+.repo-owner {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #8b949e;
+}
+
+/* Commit Section */
+.commit-section h3 {
+  margin-bottom: 10px;
+}
+
+/* Commit Card */
+.commit-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+/* Commit ID */
+.commit-id {
+  font-size: 13px;
+  color: #8b949e;
+  margin-bottom: 8px;
+}
+
+/* File list */
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* File */
+.file-item {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #0d1117;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.file-item:hover {
+  background: #21262d;
+}
+
+/* Empty */
+.empty-text {
+  color: #8b949e;
+}
+
+/*  */
+/*  */
+.repo-container {
+  padding: 20px;
+  color: white;
+}
+
+.repo-header {
+  border-bottom: 1px solid #30363d;
+  margin-bottom: 15px;
+}
+
+.repo-actions-bar {
+  margin: 15px 0;
+}
+
+.repo-actions-bar button {
+  margin-right: 10px;
+  background: #21262d;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.repo-files {
+  background: #161b22;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.commit-card {
+  border-bottom: 1px solid #30363d;
+  padding: 10px 0;
+}
+
+.file-item {
+  margin-left: 10px;
+  color: #c9d1d9;
+}

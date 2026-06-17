@@ -1,0 +1,173 @@
+
+/*  */
+/* Layout */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 250px 1fr 300px;
+  gap: 20px;
+  padding: 20px;
+  background: #0d1117;
+  color: #c9d1d9;
+  min-height: 100%;
+  margin-top: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #161b22;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.sidebar-item {
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  background: #21262d;
+}
+
+.create-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 8px;
+  background: #238636;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Main */
+.main-content {
+  background: #161b22;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.search-input {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: #0d1117;
+  color: white;
+}
+
+/* Repo Card */
+.repo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.repo-card:hover {
+  background: #21262d;
+}
+
+.repo-info {
+  cursor: pointer;
+}
+
+/* Buttons */
+.repo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.repo-btn {
+  background: #21262d;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.repo-btn.delete {
+  background: #da3633;
+}
+
+/* Right panel */
+.right-panel {
+  background: #161b22;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.suggested-card {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.suggested-card:hover {
+  background: #21262d;
+}
+
+/* Events */
+.event-card {
+  background: #0d1117;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Empty */
+.empty-text {
+  color: #8b949e;
+}
+
+/* Suggested header with arrows */
+.suggested-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Arrow buttons */
+.arrow-controls button {
+  margin-left: 5px;
+  background: #21262d;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.arrow-controls button:hover {
+  background: #30363d;
+}
+
+/* Suggested container */
+.suggested-container {
+  margin-top: 10px;
+}
+
+/* Suggested cards */
+.suggested-card {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background: #0d1117;
+  cursor: pointer;
+}
+
+.suggested-card:hover {
+  background: #21262d;
+}
