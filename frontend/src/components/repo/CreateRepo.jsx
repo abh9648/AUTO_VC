@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./createRepo.css";
 import Navbar from "../Navbar";
+const API_URL = "https://auto-vc-yxwu.onrender.com";
 
 const CreateRepo = () => {
     const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ const CreateRepo = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:3002/repo/create",
+                `${API_URL}/repo/create`,
                 {
                     ...formData,
                     owner,

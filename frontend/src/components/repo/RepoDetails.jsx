@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../Navbar";
 import "./RepoDetails.css";
+const API_URL = "https://auto-vc-yxwu.onrender.com";
 
 const RepoDetails = () => {
   const { id } = useParams();
@@ -10,13 +11,13 @@ const RepoDetails = () => {
 
   useEffect(() => {
     const fetchRepo = async () => {
-      const res = await fetch(`http://localhost:3002/repo/${id}`);
+      const res = await fetch(`${API_URL}/repo/${id}`);
       const data = await res.json();
       setRepo(data);
     };
 
     const fetchFiles = async () => {
-      const res = await fetch(`http://localhost:3002/repo/files/${id}`);
+      const res = await fetch(`${API_URL}/repo/files/${id}`);
       const data = await res.json();
       setFiles(data);
     };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar";
 import "./editRepo.css";
+const API_URL = "https://auto-vc-yxwu.onrender.com";
 
 const EditRepo = () => {
   const { id } = useParams();
@@ -12,7 +13,7 @@ const EditRepo = () => {
 
   useEffect(() => {
     const fetchRepo = async () => {
-      const res = await fetch(`http://localhost:3002/repo/${id}`);
+      const res = await fetch(`${API_URL}/repo/${id}`);
       const data = await res.json();
       setRepo(data);
       setDescription(data.description || "");
@@ -23,7 +24,7 @@ const EditRepo = () => {
 
   const handleUpdate = async () => {
     try {
-      await fetch(`http://localhost:3002/repo/update/${id}`, {
+      await fetch(`${API_URL}/repo/update/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

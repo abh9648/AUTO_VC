@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./dashboard.css";
 import Navbar from "../Navbar";
 import { useNavigate } from "react-router-dom";
+const API_URL = "https://auto-vc-yxwu.onrender.com";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Dashboard = () => {
     if (!confirmDelete) return;
 
     try {
-      await fetch(`http://localhost:3002/repo/delete/${repoId}`, {
+      await fetch(`${API_URL}/repo/delete/${repoId}`, {
         method: "DELETE",
       });
 
@@ -56,7 +57,7 @@ const Dashboard = () => {
     const fetchRepositories = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3002/repo/user/${userId}`
+          `${API_URL}/repo/user/${userId}`
         );
         const data = await response.json();
         setRepositories(
@@ -70,7 +71,7 @@ const Dashboard = () => {
 
     const fetchSuggestedRepositories = async () => {
       try {
-        const response = await fetch(`http://localhost:3002/repo/all`);
+        const response = await fetch(`${API_URL}/repo/all`);
         const data = await response.json();
         setSuggestedRepositories(Array.isArray(data) ? data : []);
       } catch (err) {
