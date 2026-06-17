@@ -6,7 +6,7 @@ import "./auth.css";
 import logo from "../../assets/logo192.png";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
-
+const API_URL = "https://auto-vc-yxwu.onrender.com";
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
@@ -19,7 +19,7 @@ const Signup = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:3002/signup", {
+      const res = await axios.post(`${API_URL}/signup`, {
         email,
         username,
         password,
